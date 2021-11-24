@@ -1,0 +1,8 @@
+
+https://docs.microsoft.com/en-us/visualstudio/extensibility/adding-an-lsp-extension?view=vs-2022#create-a-simple-language-client
+https://docs.microsoft.com/en-us/visualstudio/extensibility/walkthrough-using-a-shortcut-key-with-an-editor-extension?view=vs-2022
+https://docs.microsoft.com/en-us/visualstudio/extensibility/walkthrough-creating-a-view-adornment-commands-and-settings-column-guides?view=vs-2022
+https://powershell.github.io/PowerShellEditorServices/
+https://github.com/Microsoft/VSSDK-Extensibility-Samples/tree/master/LanguageServerProtocol
+https://github.com/microsoft/TypeScript-TmLanguage/blob/master/TypeScript.tmTheme
+https://github.com/PowerShell/EditorSyntax/blob/master/PowerShellSyntax.tmLanguage
