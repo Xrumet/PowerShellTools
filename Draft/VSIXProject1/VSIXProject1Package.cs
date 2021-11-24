@@ -1,5 +1,4 @@
 ﻿using Microsoft;
-using Microsoft.PowerShell.EditorServices.Utility;
 using Microsoft.VisualStudio;
 using Microsoft.VisualStudio.ComponentModelHost;
 using Microsoft.VisualStudio.LanguageServer.Client;
@@ -218,8 +217,8 @@ namespace VSIXProject1
 		public void OnAfterOpenFolder(string folderPath)
 		{
 
-			var task = Task.Run(async () => await _client.ActivateAsync(_cancellationToken));
-			var connection = task.Result;
+			//var task = Task.Run(async () => await _client.ActivateAsync(_cancellationToken));
+			//var connection = task.Result;
 
 			
 
