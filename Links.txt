@@ -6,3 +6,4 @@ https://powershell.github.io/PowerShellEditorServices/
 https://github.com/Microsoft/VSSDK-Extensibility-Samples/tree/master/LanguageServerProtocol
 https://github.com/microsoft/TypeScript-TmLanguage/blob/master/TypeScript.tmTheme
 https://github.com/PowerShell/EditorSyntax/blob/master/PowerShellSyntax.tmLanguage
+https://www.youtube.com/watch?v=5LaVcOP2X4g&ab_channel=MicrosoftVisualStudio
