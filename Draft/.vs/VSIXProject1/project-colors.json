@@ -1,0 +1,41 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "6934658f-75df-4957-917f-befbd4cf19c6": {
+      "ProjectGuid": "6934658f-75df-4957-917f-befbd4cf19c6",
+      "DisplayName": "VSIXProject1",
+      "ColorIndex": 0
+    },
+    "9970fce8-5d28-465a-99da-90ce80d9ab84": {
+      "ProjectGuid": "9970fce8-5d28-465a-99da-90ce80d9ab84",
+      "DisplayName": "PowerShellEditorServices",
+      "ColorIndex": 1
+    },
+    "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3": {
+      "ProjectGuid": "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3",
+      "DisplayName": "Miscellaneous Files",
+      "ColorIndex": -1
+    },
+    "4f3ac5ed-6ce5-43a1-8fb6-64f463164721": {
+      "ProjectGuid": "4f3ac5ed-6ce5-43a1-8fb6-64f463164721",
+      "DisplayName": "PowerShellEditorServices.VSCode",
+      "ColorIndex": 2
+    },
+    "1b45aef8-acb7-443b-86cd-c356d07b33d9": {
+      "ProjectGuid": "1b45aef8-acb7-443b-86cd-c356d07b33d9",
+      "DisplayName": "PowerShellEditorServices.Hosting",
+      "ColorIndex": 3
+    },
+    "d64fbfc8-f70f-4a2b-b6c0-0e8d1a7410bd": {
+      "ProjectGuid": "d64fbfc8-f70f-4a2b-b6c0-0e8d1a7410bd",
+      "DisplayName": "PowerShellEditorServices.Test.E2E",
+      "ColorIndex": 4
+    },
+    "8028e874-c8c7-464c-839e-49ce6b9b6580": {
+      "ProjectGuid": "8028e874-c8c7-464c-839e-49ce6b9b6580",
+      "DisplayName": "PowerShellEditorServices.Test",
+      "ColorIndex": 5
+    }
+  },
+  "NextColorIndex": 6
+}
