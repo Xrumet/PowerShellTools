@@ -35,7 +35,12 @@
       "ProjectGuid": "8028e874-c8c7-464c-839e-49ce6b9b6580",
       "DisplayName": "PowerShellEditorServices.Test",
       "ColorIndex": 5
+    },
+    "7f40d62f-3a4f-4080-9a3e-543c7d64ea6d": {
+      "ProjectGuid": "7f40d62f-3a4f-4080-9a3e-543c7d64ea6d",
+      "DisplayName": "ConsoleApp1",
+      "ColorIndex": 6
     }
   },
-  "NextColorIndex": 6
+  "NextColorIndex": 7
 }

@@ -8,7 +8,7 @@
     <OutputType>Exe</OutputType>
     <RootNamespace>ConsoleApp1</RootNamespace>
     <AssemblyName>ConsoleApp1</AssemblyName>
-    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
@@ -39,22 +39,8 @@
     <StartupObject>ConsoleApp1.Program</StartupObject>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Microsoft.PowerShell.EditorServices, Version=0.6.2.389, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Microsoft.PowerShell.EditorServices.0.6.2.389\lib\net45\Microsoft.PowerShell.EditorServices.dll</HintPath>
-    </Reference>
-    <Reference Include="Microsoft.PowerShell.EditorServices.Host, Version=0.6.2.389, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Microsoft.PowerShell.EditorServices.Host.0.6.2.389\lib\net45\Microsoft.PowerShell.EditorServices.Host.x86.exe</HintPath>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="Microsoft.PowerShell.EditorServices.Host.x86, Version=0.6.2.389, Culture=neutral, processorArchitecture=x86">
-      <HintPath>..\packages\Microsoft.PowerShell.EditorServices.Host.0.6.2.389\lib\net45\Microsoft.PowerShell.EditorServices.Host.x86.exe</HintPath>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="Microsoft.PowerShell.EditorServices.Protocol, Version=0.6.2.389, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Microsoft.PowerShell.EditorServices.Protocol.0.6.2.389\lib\net45\Microsoft.PowerShell.EditorServices.Protocol.dll</HintPath>
-    </Reference>
-    <Reference Include="Newtonsoft.Json, Version=7.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
-      <HintPath>..\packages\Newtonsoft.Json.7.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+    <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.13.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -73,12 +59,9 @@
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\..\..\PowerShellEditorServices\src\PowerShellEditorServices.Hosting\PowerShellEditorServices.Hosting.csproj">
-      <Project>{1b45aef8-acb7-443b-86cd-c356d07b33d9}</Project>
-      <Name>PowerShellEditorServices.Hosting</Name>
-    </ProjectReference>
+    <Content Include="startup.ps1">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
