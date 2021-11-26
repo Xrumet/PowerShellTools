@@ -40,7 +40,12 @@
       "ProjectGuid": "7f40d62f-3a4f-4080-9a3e-543c7d64ea6d",
       "DisplayName": "ConsoleApp1",
       "ColorIndex": 6
+    },
+    "690206b0-914c-4665-b050-e93c4e5d3148": {
+      "ProjectGuid": "690206b0-914c-4665-b050-e93c4e5d3148",
+      "DisplayName": "ConsoleApp2",
+      "ColorIndex": 7
     }
   },
-  "NextColorIndex": 7
+  "NextColorIndex": 8
 }
