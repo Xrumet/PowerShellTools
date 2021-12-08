@@ -45,32 +45,26 @@ namespace ConsoleApp2
 
 			var logger = LoggerFactory.CreateLogger<Program>();
 
-			var parts = sessionInfoObj.languageServicePipeName.Split('\\').ToList();
-			var serverName = parts[2];
-			var pipeName = parts[4];
-			NamedPipeClientStream inoutPipeClient = new NamedPipeClientStream(serverName, pipeName, PipeDirection.InOut, System.IO.Pipes.PipeOptions.WriteThrough);
-			await inoutPipeClient.ConnectAsync(3000);
+			//var parts = sessionInfoObj.languageServicePipeName.Split('\\').ToList();
+			//var serverName = parts[2];
+			//var pipeName = parts[4];
+			//NamedPipeClientStream inoutPipeClient = new NamedPipeClientStream(serverName, pipeName, PipeDirection.InOut, System.IO.Pipes.PipeOptions.WriteThrough);
+			//await inoutPipeClient.ConnectAsync(3000);
 
-			//var inparts = sessionInfoObj.languageServiceReadPipeName.Split('\\').ToList();
-			//var inserverName = inparts[2];
-			//var inpipeName = inparts[4];
-			//
-			//var outparts = sessionInfoObj.languageServiceWritePipeName.Split('\\').ToList();
-			//var outserverName = outparts[2];
-			//var outpipeName = outparts[4];
-			//
-			//NamedPipeClientStream inPipeClient = new NamedPipeClientStream(inserverName, inpipeName, PipeDirection.In);
-			//NamedPipeClientStream outPipeClient = new NamedPipeClientStream(outserverName, outpipeName, PipeDirection.Out, System.IO.Pipes.PipeOptions.WriteThrough);
-			//
-			//await inPipeClient.ConnectAsync();
-			//
-			//System.Security.Principal.SecurityIdentifier sid = new System.Security.Principal.SecurityIdentifier(System.Security.Principal.WellKnownSidType.BuiltinUsersSid, null);
-			//
-			//PipeSecurity ps = new PipeSecurity();
-			//PipeAccessRule par = new PipeAccessRule(sid, PipeAccessRights.ReadWrite, System.Security.AccessControl.AccessControlType.Allow);
-			//ps.AddAccessRule(par);
-			//
-			//await outPipeClient.ConnectAsync(4000);
+			var inparts = sessionInfoObj.languageServiceReadPipeName.Split('\\').ToList();
+			var inserverName = inparts[2];
+			var inpipeName = inparts[4];
+
+			var outparts = sessionInfoObj.languageServiceWritePipeName.Split('\\').ToList();
+			var outserverName = outparts[2];
+			var outpipeName = outparts[4];
+
+			NamedPipeClientStream inPipeClient = new NamedPipeClientStream(inserverName, inpipeName, PipeDirection.In);
+			NamedPipeClientStream outPipeClient = new NamedPipeClientStream(outserverName, outpipeName, PipeDirection.Out, System.IO.Pipes.PipeOptions.WriteThrough);
+
+			await inPipeClient.ConnectAsync();
+
+			await outPipeClient.ConnectAsync(4000);
 
 
 			DirectoryInfo testdir = new DirectoryInfo(@"D:\Git\SomeDevCode");
@@ -79,8 +73,10 @@ namespace ConsoleApp2
 
 			var PsesLanguageClient = LanguageClient.Create(options =>
 			{
-				options.WithInput(inoutPipeClient);
-				options.WithOutput(inoutPipeClient);
+				//options.WithInput(inoutPipeClient);
+				//options.WithOutput(inoutPipeClient);
+				options.WithInput(inPipeClient);
+				options.WithOutput(outPipeClient);
 				//options.WithInput(process.StandardOutput.BaseStream);
 				//options.WithOutput(process.StandardOutput.BaseStream);
 

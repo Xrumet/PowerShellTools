@@ -12,6 +12,7 @@ $SESSION_TEMP_PATH  = "D:\pslog"
 	-HostName 'My Client' `
 	-HostProfileId 'myclient' `
 	-HostVersion 1.0.0 `
+	-SplitInOutPipes `
 	-LogLevel Verbose
 	
 	#-EnableConsoleRepl `
