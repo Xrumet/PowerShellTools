@@ -237,7 +237,7 @@ namespace ConsoleApp2
 			ProcessStartInfo startInfo = new ProcessStartInfo();
 			startInfo.FileName = @"powershell.exe";
 			startInfo.Arguments = @"& './startup.ps1'";
-			startInfo.Verb = "runAs";
+			//startInfo.Verb = "runAs";
 			startInfo.RedirectStandardInput = true;
 			startInfo.RedirectStandardOutput = true;
 			startInfo.RedirectStandardError = true;
