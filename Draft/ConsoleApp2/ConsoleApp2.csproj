@@ -4,7 +4,7 @@
 		<OutputType>Exe</OutputType>
 		<TargetFramework>net472</TargetFramework>
 		<StartupObject>ConsoleApp2.Program</StartupObject>
-		<LangVersion>9</LangVersion>
+		<LangVersion>10</LangVersion>
 	</PropertyGroup>
 
 	<ItemGroup>
@@ -18,11 +18,12 @@
 	</ItemGroup>
 
 	<ItemGroup>
-		<PackageReference Include="Microsoft.VisualStudio.LanguageServer.Client" Version="17.0.5158" />
-		<PackageReference Include="Microsoft.VisualStudio.LanguageServer.Protocol" Version="17.0.5133" />
-		<PackageReference Include="Microsoft.VisualStudio.LanguageServer.Protocol.Extensions" Version="17.0.5133" />
+
 		<PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
 		<PackageReference Include="OmniSharp.Extensions.LanguageClient" Version="0.19.5" />
+		<PackageReference Include="OmniSharp.Extensions.LanguageProtocol" Version="0.19.5" />
+		<PackageReference Include="Microsoft.Extensions.Logging" Version="2.1.0" />
+		<PackageReference Include="StreamJsonRpc" Version="2.9.85" />
 	</ItemGroup>
 
 </Project>

@@ -12,9 +12,14 @@ $SESSION_TEMP_PATH  = "D:\pslog"
 	-HostName 'My Client' `
 	-HostProfileId 'myclient' `
 	-HostVersion 1.0.0 `
-	-Stdio `
-	-LogLevel Normal
+	-LogLevel Verbose
 	
+	#-EnableConsoleRepl `
+	#-LanguageServicePipeName "mytestlsppipe" `
+	#-DebugServicePipeName "mytestlsppipedebug" `
+	#-SplitInOutPipes `
+
+	#-Stdio `
 
 	#public enum PsesLogLevel
     #{
