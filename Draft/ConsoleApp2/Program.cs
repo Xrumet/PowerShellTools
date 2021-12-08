@@ -59,12 +59,12 @@ namespace ConsoleApp2
 			var outserverName = outparts[2];
 			var outpipeName = outparts[4];
 
-			NamedPipeClientStream inPipeClient = new NamedPipeClientStream(inserverName, inpipeName, PipeDirection.In);
-			NamedPipeClientStream outPipeClient = new NamedPipeClientStream(outserverName, outpipeName, PipeDirection.Out, System.IO.Pipes.PipeOptions.WriteThrough);
-
+			NamedPipeClientStream inPipeClient = new NamedPipeClientStream(inserverName, inpipeName, PipeDirection.In, System.IO.Pipes.PipeOptions.Asynchronous);
+			NamedPipeClientStream outPipeClient = new NamedPipeClientStream(outserverName, outpipeName, PipeDirection.Out, System.IO.Pipes.PipeOptions.Asynchronous);
+			
 			await inPipeClient.ConnectAsync();
 
-			await outPipeClient.ConnectAsync(4000);
+			await outPipeClient.ConnectAsync();
 
 
 			DirectoryInfo testdir = new DirectoryInfo(@"D:\Git\SomeDevCode");
